@@ -21,14 +21,19 @@
 </head>
 
 <body class="bg-blue-100">
-    <div class="text-center flex flex-col gap-2 p-2"> 
-        <label for="config">لطفا کانفیگ خود را وارد کنید</label>
-        <textarea name="config" id="config" class="border focous:outline-none rounded-lg"></textarea>
-        <button id="add" class="bg-blue-500 h-auto text-white rounded-lg p-1 my-2 text-lg hover:bg-blue-600 w-fit mx-auto">دریافت</button>
-    </div>
-    <div class="text-center flex flex-col gap-2 p-2">
-        <p id="result" class="border p-1 bg-white"></p>
-        <button id="copy" class="bg-blue-500 rounded-lg p-1 my-2 text-lg hover:bg-blue-600 text-white w-fit mx-auto">کپی کن</button>
+    <div class="lg:grid grid-cols-2">
+        <div class="text-center flex flex-col gap-2 p-2">
+            <label for="config">لطفا کانفیگ خود را وارد کنید</label>
+            <textarea name="config" id="config" class="border focous:outline-none rounded-lg"></textarea>
+            <button id="add"
+                class="bg-blue-500 h-auto text-white rounded-lg p-1 my-2 text-lg hover:bg-blue-600 w-fit mx-auto">دریافت</button>
+        </div>
+        <div class="text-center flex flex-col gap-2 p-2">
+            <p id="result" class="border p-1 bg-white"></p>
+            <button id="copy"
+                class="bg-blue-500 rounded-lg p-1 my-2 text-lg hover:bg-blue-600 text-white w-fit mx-auto">کپی
+                کن</button>
+        </div>
     </div>
     <script src="./app.js"></script>
 </body>

@@ -3,24 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @font-face {
+            font-family: 'vazir';
+            src: url(./Font/Vazir.eot);
+            src: url(./Font/Vazir.ttf);
+            src: url(./Font/Vazir.woff);
+            src: url(./Font/Vazir.woff2);
+        }
+
+        body {
+            font-family: vazir;
+        }
+    </style>
+    <title>Freak Vpn</title>
 </head>
 
-<body>
-    <p class="sni">fjfkbgjiqe.lmxtinl.com</p>
-    <button class="sni-copy">copy</button>
-    <p class="msg">سلام و عرض ادب دلیل قطعی بررسی و رفع شد به کانفیگ جدیدتون ۲۰ روز اضافه شد
-        اسم کانفیگتون تغییر نکرده ولی توی سرور ۲۰ روز اضافه تر خورده
-        تشکر از همراهی شما
-    </p>
-    <button class="msg-copy">copy</button>
-    <p class="port">zula.ir:8443</p>
-    <button class="port-copy">copy</button>
-    <h1>old config</h1>
-
-    <p class="old"></p>
-    <h1>new config</h1>
-    <p class="new"></p>
+<body class="bg-blue-100">
+    <div class="text-center flex flex-col gap-2 p-2"> 
+        <label for="config">لطفا کانفیگ خود را وارد کنید</label>
+        <textarea name="config" id="config" class="border focous:outline-none rounded-lg"></textarea>
+        <button id="add" class="bg-blue-500 h-auto text-white rounded-lg p-1 my-2 text-lg hover:bg-blue-600 w-fit mx-auto">دریافت</button>
+    </div>
+    <div class="text-center flex flex-col gap-2 p-2">
+        <p id="result" class="border p-1 bg-white"></p>
+        <button id="copy" class="bg-blue-500 rounded-lg p-1 my-2 text-lg hover:bg-blue-600 text-white w-fit mx-auto">کپی کن</button>
+    </div>
     <script src="./app.js"></script>
 </body>
 
